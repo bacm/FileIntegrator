@@ -1,6 +1,6 @@
 ﻿using System.Collections.Specialized;
 
-namespace ConsoleApplication1
+namespace FileIntegrator
 {
     public interface IObservableSyncronizedQueue
     {

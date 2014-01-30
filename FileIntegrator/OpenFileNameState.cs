@@ -1,14 +1,17 @@
-﻿namespace ConsoleApplication1
+﻿namespace FileIntegrator
 {
     public class OpenFileNameState : IIntegrationState
     {
         private readonly string _filepath;
 
-        public EIntegratorStep IntegratorStep { get { return EIntegratorStep.OpenFile; } }
-
         public OpenFileNameState(string filepath)
         {
             _filepath = filepath;
+        }
+
+        public EIntegratorStep IntegratorStep
+        {
+            get { return EIntegratorStep.OpenFile; }
         }
 
         public IIntegrationState NextState()

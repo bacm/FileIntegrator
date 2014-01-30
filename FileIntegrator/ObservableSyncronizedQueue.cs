@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Specialized;
 
-namespace ConsoleApplication1
+namespace FileIntegrator
 {
     // todo: Could other source, more robust
     public class ObservableSyncronizedQueue : IObservableSyncronizedQueue

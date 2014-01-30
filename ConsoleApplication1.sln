@@ -5,19 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{218BF25B-1F3E-4338-AF7A-4EF7FC522746}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileIntegrator", "FileIntegrator\FileIntegrator.csproj", "{D3B84D57-858F-467D-8DA0-E4F527377427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseLibraryExceptionHandling", "EnterpriseLibraryExceptionHandling\EnterpriseLibraryExceptionHandling.csproj", "{05C7AD86-82F5-452F-9802-1020961BE625}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://localhost:8080/tfs/testcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ConsoleApplication1\\ConsoleApplication1.csproj
-		SccProjectName1 = ConsoleApplication1
-		SccLocalPath1 = ConsoleApplication1
-		SccProjectUniqueName2 = UnitTestProject1\\UnitTestProject1.csproj
-		SccProjectName2 = UnitTestProject1
-		SccLocalPath2 = UnitTestProject1
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -31,8 +23,19 @@ Global
 		{218BF25B-1F3E-4338-AF7A-4EF7FC522746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{218BF25B-1F3E-4338-AF7A-4EF7FC522746}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{218BF25B-1F3E-4338-AF7A-4EF7FC522746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B84D57-858F-467D-8DA0-E4F527377427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B84D57-858F-467D-8DA0-E4F527377427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B84D57-858F-467D-8DA0-E4F527377427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B84D57-858F-467D-8DA0-E4F527377427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C7AD86-82F5-452F-9802-1020961BE625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C7AD86-82F5-452F-9802-1020961BE625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C7AD86-82F5-452F-9802-1020961BE625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C7AD86-82F5-452F-9802-1020961BE625}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

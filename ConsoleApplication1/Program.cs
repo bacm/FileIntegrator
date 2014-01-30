@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Threading;
+using FileIntegrator;
 using Ninject;
 
 namespace ConsoleApplication1
@@ -9,12 +10,7 @@ namespace ConsoleApplication1
     {
         private static void Main()
         {
-            var kernel = new StandardKernel();
-            kernel.Bind<IObservableSyncronizedQueue>().To<ObservableSyncronizedQueue>().InSingletonScope();
-            kernel.Bind<IFileConsumer>().To<FileConsumer>().InSingletonScope();
-            kernel.Bind<IFileWatcherProducer>().To<FileWatcherProducer>().InSingletonScope();
-            kernel.Bind<IIntegrationStateFactory>().To<IntegrationStateFactory>().InSingletonScope();
-            kernel.Bind<IIntegrationOrchestrator>().To<IntegrationOrchestrator>();
+            var kernel = new StandardKernel(new FileIntegratorModule());
 
             Directory.CreateDirectory(@"f:\temporary_directory_to_delete");
 
@@ -25,24 +21,23 @@ namespace ConsoleApplication1
 
             using (var watcher = kernel.Get<IFileWatcherProducer>())
             {
-                consumer.Start();
                 watcher.Start(@"f:\temporary_directory_to_delete");
+                consumer.Start();
 
-                File.WriteAllText(path, "some contents");
+                while (true)
+                {
+                    File.WriteAllText(path, "some contents");
 
-                // detect it or die
-                Thread.Sleep(1000);
+                    Thread.Sleep(500);
+
+                    File.Delete(path);
+
+                    if (Console.KeyAvailable) break;
+                }
             }
 
-            while (File.Exists(path))
-            {
-                // wait for file every second
-                Thread.Sleep(1000);
-            }
 
-            File.Delete(path);
-
-            Directory.Delete(@"f:\temporary_directory_to_delete");
+            Directory.Delete(@"f:\temporary_directory_to_delete", true);
         }
     }
 }

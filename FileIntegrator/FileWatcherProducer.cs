@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace ConsoleApplication1
+namespace FileIntegrator
 {
     public class FileWatcherProducer : IFileWatcherProducer
     {

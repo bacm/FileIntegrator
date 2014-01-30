@@ -1,8 +1,11 @@
-﻿namespace ConsoleApplication1
+﻿namespace FileIntegrator
 {
     public class IntegrationEndedState : IIntegrationState
     {
-        public EIntegratorStep IntegratorStep { get { return EIntegratorStep.ProcessingEndedSuccessfully;} }
+        public EIntegratorStep IntegratorStep
+        {
+            get { return EIntegratorStep.ProcessingEndedSuccessfully; }
+        }
 
         public IIntegrationState NextState()
         {

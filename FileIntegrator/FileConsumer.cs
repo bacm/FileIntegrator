@@ -1,13 +1,13 @@
 ﻿using System.Collections.Specialized;
 using System.Threading;
 
-namespace ConsoleApplication1
+namespace FileIntegrator
 {
     public class FileConsumer : IFileConsumer
     {
         private static readonly Semaphore Semaphore = new Semaphore(0, 500);
-        private readonly IObservableSyncronizedQueue _queue;
         private readonly IIntegrationOrchestrator _orchestrator;
+        private readonly IObservableSyncronizedQueue _queue;
 
         public FileConsumer(IObservableSyncronizedQueue queue, IIntegrationOrchestrator orchestrator)
         {
