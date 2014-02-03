@@ -1,4 +1,4 @@
-﻿namespace FileIntegrator
+﻿namespace FileIntegrator.Interfaces
 {
     public interface IIntegrationOrchestrator
     {

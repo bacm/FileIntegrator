@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Specialized;
+using FileIntegrator.Interfaces;
 
 namespace FileIntegrator
 {

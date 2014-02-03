@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using FileIntegrator;
+using FileIntegrator.States;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestProject1
 {
@@ -8,6 +10,8 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
+            var state = new CheckFileNameState(new IntegratedFile());
+            state.Execute();
         }
     }
 }

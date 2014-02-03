@@ -1,6 +1,7 @@
 ﻿using System.IO;
+using FileIntegrator.Interfaces;
 
-namespace FileIntegrator
+namespace FileIntegrator.Watcher
 {
     public class FileWatcherProducer : IFileWatcherProducer
     {

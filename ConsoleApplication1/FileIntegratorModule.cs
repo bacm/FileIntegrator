@@ -1,4 +1,7 @@
 ﻿using FileIntegrator;
+using FileIntegrator.Consumer;
+using FileIntegrator.Interfaces;
+using FileIntegrator.Watcher;
 using Ninject.Modules;
 
 namespace ConsoleApplication1
@@ -12,6 +15,7 @@ namespace ConsoleApplication1
             Bind<IFileWatcherProducer>().To<FileWatcherProducer>().InSingletonScope();
             Bind<IIntegrationStateFactory>().To<IntegrationStateFactory>().InSingletonScope();
             Bind<IIntegrationOrchestrator>().To<IntegrationOrchestrator>();
+            Bind<ILogCollection>().To<LogCollection>();
         }
     }
 }

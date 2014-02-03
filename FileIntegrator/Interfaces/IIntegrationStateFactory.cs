@@ -1,4 +1,6 @@
-﻿namespace FileIntegrator
+﻿using FileIntegrator.States;
+
+namespace FileIntegrator.Interfaces
 {
     public interface IIntegrationStateFactory
     {

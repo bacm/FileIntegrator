@@ -5,6 +5,7 @@
         StartFileProcessing,
         CheckFileName,
         OpenFile,
-        ProcessingEndedSuccessfully
+        ProcessingEndedSuccessfully,
+        Analysis
     }
 }

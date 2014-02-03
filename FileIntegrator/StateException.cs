@@ -1,11 +1,16 @@
 ﻿using System;
+using FileIntegrator.Interfaces;
+using FileIntegrator.States;
 
 namespace FileIntegrator
 {
     public class StateException : Exception
     {
-        public StateException(IIntegrationState state)
+        private readonly Exception _exception;
+
+        public StateException(IIntegrationState state, Exception exception)
         {
+            _exception = exception;
             State = state;
         }
 

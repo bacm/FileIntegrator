@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FileIntegrator
+namespace FileIntegrator.Watcher
 {
     public interface IFileWatcherProducer : IDisposable
     {

@@ -68,6 +68,10 @@
       <Project>{FDA43D81-AB04-499B-BDFB-D96F5EA5DB80}</Project>
       <Name>ConsoleApplication1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FileIntegrator\FileIntegrator.csproj">
+      <Project>{D3B84D57-858F-467D-8DA0-E4F527377427}</Project>
+      <Name>FileIntegrator</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

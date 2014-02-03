@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using FileIntegrator.States;
 
-namespace FileIntegrator
+namespace FileIntegrator.Interfaces
 {
     public interface ILogCollection
     {
         void Append(IIntegrationState currentState);
     }
 
-    internal class LogCollection : ILogCollection
+    public class LogCollection : ILogCollection
     {
         private readonly ICollection<Log> _logs = new Collection<Log>();
 

@@ -1,37 +1,43 @@
-﻿using System;
+﻿using FileIntegrator.Interfaces;
+using FileIntegrator.States;
+using Microsoft.Practices.EnterpriseLibrary.ExceptionHandling;
 
 namespace FileIntegrator
 {
     public class IntegrationOrchestrator : IIntegrationOrchestrator
     {
-        private readonly ILogCollection _collection;
-        private readonly IIntegrationStateFactory _factory;
+        private readonly IIntegrationStateFactory stateFactory;
 
-        public IntegrationOrchestrator(IIntegrationStateFactory factory, ILogCollection collection)
+        public IntegrationOrchestrator(IIntegrationStateFactory stateFactory)
         {
-            _factory = factory;
-            _collection = collection;
+            this.stateFactory = stateFactory;
         }
 
         public void Start(string filepath)
         {
-            var currentState = _factory.Start(filepath);
+            var currentState = stateFactory.Start(filepath);
 
+            do
+            {
+                TryToExecuteState(currentState);
+                currentState = currentState.NextState();
+            } while (currentState.IntegratorStep != EIntegratorStep.ProcessingEndedSuccessfully);
+        }
+
+        private static void TryToExecuteState(IIntegrationState currentState)
+        {
             try
             {
-                do
-                {
-                    _collection.Append(currentState);
-                    currentState = currentState.NextState();
-                } while (currentState.IntegratorStep != EIntegratorStep.ProcessingEndedSuccessfully);
+                currentState.Execute();
             }
             catch (StateException se)
             {
-            }
-            catch (Exception ex)
-            {
-                // check 
-                // http://msdn.microsoft.com/en-us/library/dn440728(v=pandp.60).aspx
+                var rethrow = ExceptionPolicy.HandleException(se, "Dev");
+
+                if (rethrow)
+                {
+                    throw;
+                }
             }
         }
     }

@@ -45,27 +45,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckFileNameState.cs" />
+    <Compile Include="Interfaces\IIntegratedFileFactory.cs" />
+    <Compile Include="IntegratedFile.cs" />
+    <Compile Include="IntegratedFileFactory.cs" />
+    <Compile Include="States\AnalysisState.cs" />
+    <Compile Include="States\CheckFileNameState.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="EStep.cs" />
-    <Compile Include="FileConsumer.cs" />
-    <Compile Include="FileWatcherProducer.cs" />
-    <Compile Include="IFileConsumer.cs" />
-    <Compile Include="IFileWatcherProducer.cs" />
-    <Compile Include="IIntegrationOrchestrator.cs" />
-    <Compile Include="IIntegrationState.cs" />
-    <Compile Include="IIntegrationStateFactory.cs" />
-    <Compile Include="ILogCollection.cs" />
-    <Compile Include="IntegrationEndedState.cs" />
+    <Compile Include="Consumer\FileConsumer.cs" />
+    <Compile Include="Watcher\FileWatcherProducer.cs" />
+    <Compile Include="Interfaces\IFileConsumer.cs" />
+    <Compile Include="Watcher\IFileWatcherProducer.cs" />
+    <Compile Include="Interfaces\IIntegrationOrchestrator.cs" />
+    <Compile Include="Interfaces\IIntegrationState.cs" />
+    <Compile Include="Interfaces\IIntegrationStateFactory.cs" />
+    <Compile Include="Interfaces\ILogCollection.cs" />
+    <Compile Include="States\IntegrationEndedState.cs" />
     <Compile Include="IntegrationOrchestrator.cs" />
     <Compile Include="IntegrationStateFactory.cs" />
-    <Compile Include="IObservableSyncronizedQueue.cs" />
+    <Compile Include="Interfaces\IObservableSyncronizedQueue.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="OberthurFileIntegratorEventSource.cs" />
     <Compile Include="ObservableSyncronizedQueue.cs" />
-    <Compile Include="OpenFileNameState.cs" />
+    <Compile Include="States\OpenFileNameState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StartingState.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="States\StartingState.cs" />
     <Compile Include="StateException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EnterpriseLibraryExceptionHandling\EnterpriseLibraryExceptionHandling.csproj">
+      <Project>{05C7AD86-82F5-452F-9802-1020961BE625}</Project>
+      <Name>EnterpriseLibraryExceptionHandling</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
