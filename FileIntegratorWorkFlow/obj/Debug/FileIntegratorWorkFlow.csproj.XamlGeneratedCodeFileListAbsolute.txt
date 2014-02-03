@@ -1,0 +1,4 @@
+obj\Debug\_FileIntegratorWorkFlow.g.cs
+obj\Debug\Activity1.g.cs
+obj\Debug\FileIntegratorWorkFlow_Activity1_BeforeInitializeComponentHelper.cs
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow_Activity1_CompiledExpressionRoot.cs

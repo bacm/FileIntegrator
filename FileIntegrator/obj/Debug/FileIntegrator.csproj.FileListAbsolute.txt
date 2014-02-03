@@ -1,0 +1,13 @@
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\bin\Debug\FileIntegrator.dll
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\bin\Debug\FileIntegrator.pdb
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\obj\Debug\FileIntegrator.dll
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\obj\Debug\FileIntegrator.pdb
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\obj\Debug\FileIntegrator.Properties.Resources.resources
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\obj\Debug\FileIntegrator.csproj.GenerateResource.Cache
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\bin\Debug\EnterpriseLibraryExceptionHandling.dll
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\bin\Debug\EnterpriseLibraryExceptionHandling.pdb
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegrator\obj\Debug\FileIntegrator.csprojResolveAssemblyReference.cache

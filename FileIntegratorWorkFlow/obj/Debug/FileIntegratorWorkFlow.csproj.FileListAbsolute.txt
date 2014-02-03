@@ -1,0 +1,17 @@
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\Activity1.g.xaml
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow_Activity1_BeforeInitializeComponentHelper.txt
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\_FileIntegratorWorkFlow.g.cs
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\Activity1.g.cs
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow_Activity1_BeforeInitializeComponentHelper.cs
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow.csproj.XamlGeneratedCodeFileListAbsolute.txt
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow.csproj.XamlGeneratedXamlFileListAbsolute.txt
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow.dll
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow.pdb
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\bin\Debug\FileIntegratorWorkFlow.dll
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\bin\Debug\FileIntegratorWorkFlow.pdb
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow_Activity1_CompiledExpressionRoot.cs
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\FileIntegratorWorkFlow.csprojResolveAssemblyReference.cache
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\InProcessTempFiles\Activity1.g.cs
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\InProcessTempFiles\Activity1.g.xaml
+C:\Users\Bruno\Source\Repos\FileIntegrator\FileIntegratorWorkFlow\obj\Debug\InProcessTempFiles\_FileIntegratorWorkFlow.g.cs
